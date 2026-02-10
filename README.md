@@ -9,7 +9,7 @@ A personal blog about game development and creative demos.
 - [Next.js](https://nextjs.org/) 15 (App Router) + React 19
 - [Tailwind CSS](https://tailwindcss.com/) 4
 - [Contentlayer](https://contentlayer.dev/) for MDX content management
-- [Pliny](https://github.com/timlrx/pliny) for search, comments & analytics
+- [Pliny](https://github.com/timlrx/pliny) for search & analytics
 - TypeScript
 
 ## Getting Started
@@ -41,25 +41,13 @@ data/
 ├── headerNavLinks.ts      Navigation links
 ├── footerSocialLinks.ts   Footer social icons
 └── projectsData.ts        Projects list
+books/          Project documentation
 public/static/  Images, videos
 ```
 
 ## Writing Posts
 
-Create an MDX file in `data/blog/`:
-
-```mdx
----
-title: 'Post Title'
-date: '2024-01-01'
-tags: ['gamedev', 'demo']
-draft: false
-summary: 'A short summary'
-layout: PostLayout
----
-
-Your content here...
-```
+See [books/how-to-write-a-post.md](books/how-to-write-a-post.md) for a detailed guide.
 
 ## License
 

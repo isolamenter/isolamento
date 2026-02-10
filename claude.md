@@ -11,7 +11,7 @@
 - **语言**: TypeScript
 - **样式**: Tailwind CSS 4 + PostCSS
 - **内容管理**: Contentlayer2 0.5.5 (MDX → 类型安全内容)
-- **集成库**: Pliny 0.4.1 (搜索/评论/分析)
+- **集成库**: Pliny 0.4.1 (搜索/分析)
 - **包管理器**: Yarn 3.6.1
 
 ## 项目结构
@@ -27,7 +27,6 @@ app/                  # Next.js App Router 页面
 
 components/           # React 组件
 ├── Card.tsx          # 项目卡片
-├── Comments.tsx      # 评论组件 (Giscus)
 ├── Header.tsx        # 顶部导航栏
 ├── Footer.tsx        # 页脚
 ├── MDXComponents.tsx # MDX 自定义组件
@@ -51,6 +50,9 @@ data/
 ├── projectsData.ts        # 项目列表
 ├── authors/               # 作者信息 (MDX): default
 └── blog/                  # 博客文章 (MDX)
+
+books/                # 项目文档
+└── how-to-write-a-post.md  # 博客文章编写指南
 
 css/                  # 样式文件
 ├── tailwind.css      # Tailwind 入口
@@ -112,7 +114,6 @@ layout: PostLayout
 ## 功能特性
 
 - **搜索**: Kbar 全站搜索
-- **评论**: Giscus (GitHub Discussions)
 - **分析**: Umami 统计
 - **主题**: 明/暗/跟随系统
 - **代码高亮**: rehype-prism-plus
@@ -130,8 +131,6 @@ layout: PostLayout
 
 通过 `.env` 文件配置（不提交到仓库）：
 - `NEXT_UMAMI_ID` - Umami 分析 ID
-- `NEXT_PUBLIC_GISCUS_REPO` / `NEXT_PUBLIC_GISCUS_REPOSITORY_ID` - Giscus 评论配置
-- `NEXT_PUBLIC_GISCUS_CATEGORY` / `NEXT_PUBLIC_GISCUS_CATEGORY_ID` - Giscus 分类配置
 
 ## 部署
 
