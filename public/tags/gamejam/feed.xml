@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Isolamento</title>
+      <link>https://isolamenter.vercel.app/blog</link>
+      <description>A blog about game development and demos</description>
+      <language>en-us</language>
+      <managingEditor>isolamenter@gmail.com (Isolamenter)</managingEditor>
+      <webMaster>isolamenter@gmail.com (Isolamenter)</webMaster>
+      <lastBuildDate>Sat, 01 Jan 2022 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://isolamenter.vercel.app/tags/gamejam/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://isolamenter.vercel.app/blog/my-gamejam</guid>
+    <title>Gamejam Demo</title>
+    <link>https://isolamenter.vercel.app/blog/my-gamejam</link>
+    <description>Demos made in gamejam.</description>
+    <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+    <author>isolamenter@gmail.com (Isolamenter)</author>
+    <category>demos</category><category>game-dev</category><category>gamejam</category>
+  </item>
+
+    </channel>
+  </rss>
