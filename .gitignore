@@ -26,6 +26,15 @@ yarn-error.log*
 # Bundle analyzer
 .analyzer
 
+# Yarn PnP
+.pnp.*
+
+# Generated search index
+public/search.json
+
+# npm lock (using Yarn)
+package-lock.json
+
 # macOS
 .DS_Store
 
@@ -33,3 +42,4 @@ yarn-error.log*
 *.swp
 *.swo
 *~
+.yarn
