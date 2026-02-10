@@ -40,7 +40,7 @@ data/
 ├── siteMetadata.js     Site configuration
 ├── headerNavLinks.ts   Navigation links
 └── projectsData.ts     Projects list
-public/static/  Images, videos, favicons
+public/static/  Images, videos
 ```
 
 ## Writing Posts

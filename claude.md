@@ -61,8 +61,7 @@ scripts/              # 构建脚本
 
 public/static/        # 静态资源
 ├── images/           # 图片
-├── videos/           # 视频
-└── favicons/         # 网站图标
+└── videos/           # 视频
 ```
 
 ## 常用命令
