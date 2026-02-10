@@ -11,7 +11,7 @@
 - **语言**: TypeScript
 - **样式**: Tailwind CSS 4 + PostCSS
 - **内容管理**: Contentlayer2 0.5.5 (MDX → 类型安全内容)
-- **集成库**: Pliny 0.4.1 (搜索/评论/分析/订阅)
+- **集成库**: Pliny 0.4.1 (搜索/评论/分析)
 - **包管理器**: Yarn 3.6.1
 
 ## 项目结构
@@ -45,11 +45,12 @@ layouts/              # 页面布局模板
 └── ListLayoutWithTags.tsx  # 带标签侧栏的列表布局
 
 data/
-├── siteMetadata.js   # 网站配置 (Pliny 配置)
-├── headerNavLinks.ts # 导航菜单
-├── projectsData.ts   # 项目列表
-├── authors/          # 作者信息 (MDX): default, sparrowhawk
-└── blog/             # 博客文章 (MDX)
+├── siteMetadata.js        # 网站配置 (Pliny 配置)
+├── headerNavLinks.ts      # 导航菜单
+├── footerSocialLinks.ts   # 页脚社交图标配置
+├── projectsData.ts        # 项目列表
+├── authors/               # 作者信息 (MDX): default
+└── blog/                  # 博客文章 (MDX)
 
 css/                  # 样式文件
 ├── tailwind.css      # Tailwind 入口
@@ -101,7 +102,8 @@ layout: PostLayout
 
 ## 配置文件
 
-- `data/siteMetadata.js` - 网站元数据、社交链接、功能开关 (Pliny 配置格式)
+- `data/siteMetadata.js` - 网站元数据、社交链接 URL、功能开关 (Pliny 配置格式)
+- `data/footerSocialLinks.ts` - 页脚社交图标显示配置 (控制显示哪些图标及顺序)
 - `data/headerNavLinks.ts` - 导航菜单 (Home, Blog, Tags, Projects, About)
 - `data/projectsData.ts` - 项目列表
 - `contentlayer.config.ts` - 内容层配置和 MDX 插件
@@ -111,7 +113,6 @@ layout: PostLayout
 
 - **搜索**: Kbar 全站搜索
 - **评论**: Giscus (GitHub Discussions)
-- **订阅**: Buttondown 邮件列表
 - **分析**: Umami 统计
 - **主题**: 明/暗/跟随系统
 - **代码高亮**: rehype-prism-plus

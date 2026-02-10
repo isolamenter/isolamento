@@ -9,7 +9,7 @@ A personal blog about game development and creative demos.
 - [Next.js](https://nextjs.org/) 15 (App Router) + React 19
 - [Tailwind CSS](https://tailwindcss.com/) 4
 - [Contentlayer](https://contentlayer.dev/) for MDX content management
-- [Pliny](https://github.com/timlrx/pliny) for search, comments, analytics & newsletter
+- [Pliny](https://github.com/timlrx/pliny) for search, comments & analytics
 - TypeScript
 
 ## Getting Started
@@ -37,9 +37,10 @@ layouts/        Page layout templates (PostLayout, PostSimple, PostBanner)
 data/
 ├── blog/       Blog posts (MDX)
 ├── authors/    Author profiles (MDX)
-├── siteMetadata.js     Site configuration
-├── headerNavLinks.ts   Navigation links
-└── projectsData.ts     Projects list
+├── siteMetadata.js        Site configuration
+├── headerNavLinks.ts      Navigation links
+├── footerSocialLinks.ts   Footer social icons
+└── projectsData.ts        Projects list
 public/static/  Images, videos
 ```
 
